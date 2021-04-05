@@ -63,12 +63,12 @@ jobs:
     - name: Configure CMake
       shell: bash
       working-directory: ${{github.workspace}}/build
-      run: cmake $GITHUB_WORKSPACE -DCMAKE_BUILD_TYPE=$BUILD_TYPE
+      run: cmake $GITHUB_WORKSPACE -DCMAKE_BUILD_TYPE=$BUILD_TYPE -G "Visual Studio 15 2017" -A Win32
 
     - name: Build
       working-directory: ${{github.workspace}}/build
       shell: bash
-      run: cmake --build . --config $BUILD_TYPE --target Attorney_Online
+      run: cmake --build . --config $BUILD_TYPE --target Attorney_Online -G "Visual Studio 15 2017" -A Win32
 
     - name: Deploy
       working-directory: ${{github.workspace}}/build/Release
