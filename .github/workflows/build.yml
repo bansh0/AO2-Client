@@ -59,8 +59,8 @@ jobs:
 
     - name: Create Build Environment
       run: |
-        echo $Qt5_DIR
-        set Qt5_DIR=${{github.workspace}}/Qt/5.15.2/msvc2019
+        echo "$Qt5_Dir"
+        set Qt5_Dir=${{github.workspace}}/Qt/5.15.2/msvc2019
         cmake -E make_directory ${{github.workspace}}/build
 
     - name: Configure CMake
