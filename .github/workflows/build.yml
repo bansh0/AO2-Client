@@ -48,7 +48,7 @@ jobs:
       uses: actions/cache@v1
       with:
         path: ../Qt
-        key: ${{ runner.os }}-qt5
+        key: ${{ runner.os }}-qt5-x86
 
     - name: Install Qt
       uses: jurplel/install-qt-action@v2
