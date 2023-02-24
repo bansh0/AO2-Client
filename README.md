@@ -8,7 +8,7 @@
 
 ## Credits
 
-This is a open-source remake of Attorney Online written by OmniTroid. The original Attorney Online client was written by FanatSors in Delphi.
+This is an open-source remake of Attorney Online written by OmniTroid. The original Attorney Online client was written by FanatSors in Delphi.
 
 The logo (`logo.png` and `logo.ico`) was designed by Lucas Carbi. The characters depicted in the logo are owned by Capcom.
 
